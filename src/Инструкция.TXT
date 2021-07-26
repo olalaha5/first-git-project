@@ -3,3 +3,5 @@
 В pages страницы HTML(препроцессор PUG)
 
 В blocks\common есть файл layout.pug который является шаблоном для страниц в папке pages и применяется командой "extends ../blocks/common/layout" в первой строчке кода страниц
+
+pug файлы компилируются в html только из папки pages
