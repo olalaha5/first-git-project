@@ -1,0 +1,80 @@
+.about-company
+    background-image: url(img\blocks\about-company\background-image2.png)
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: 100% auto
+    display: flex
+    justify-content: center
+    &__wrapper
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        align-items: center
+        max-width: 1140px
+        margin: 164px 0 124px 0
+    &__tagline
+        font-family: 'Libre Baskerville', serif
+        font-size: 60px
+        color: #fff
+        text-align: center
+        margin-bottom: 48px
+    &__btn
+        width: 180px
+        height: 50px
+        border: none
+        border-radius: 25px
+        background-color: #FC5F45
+        color: #fff
+        text-transform: uppercase
+        font-size: 16px
+        font-family: "Poppins"
+        font-weight: 500
+        text-align: center
+        margin-bottom: 83px
+        cursor: pointer
+        &:active
+            border: 2px inset
+
+    &__row
+        display: flex
+        justify-content: space-around
+        width: 100%
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-bottom: 40px
+        &_color_green
+            fill: #38C695
+            color: #38C695
+            width: 200px
+        &_color_purple
+            fill: #B27CF5
+            color: #B27CF5
+            width: 180px
+        &_color_orange
+            fill: #FEB960
+            color: #FEB960
+            width: 240px
+    &__icon
+        width: 40px
+        height: 40px
+        margin-bottom: 31px
+    &__text
+        text-transform: uppercase
+        font-size: 18px
+        font-family: "Poppins"
+        text-align: center
+
+@media screen and ( max-width: 1800px )
+    .about-company
+        background-size: auto 100%
+@media screen and ( max-width: 690px )
+    .about-company
+        &__tagline
+            font-size: 40px
+        &__row
+            flex-direction: column
+            align-items: center
+        &__icon
+            margin-bottom: 20px

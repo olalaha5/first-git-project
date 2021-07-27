@@ -6,5 +6,21 @@ block head
 
 block content
     header.header
-        include ..\blocks\nav\nav.pug
-
+        include ..\blocks\nav\nav
+        .about-company 
+            .about-company__wrapper
+                .about-company__tagline We design things with love and passion.
+                button.about-company__btn Our Works
+                .about-company__row
+                    .about-company__container.about-company__container_color_green
+                        .about-company__icon
+                            include ..\blocks\about-company\coin-of-dollar_icon-icons
+                        .about-company__text Fixed price projects
+                    .about-company__container.about-company__container_color_purple
+                        .about-company__icon
+                            include ..\blocks\about-company\wondicon-ui-free-clock_111254
+                        .about-company__text Receive on time
+                    .about-company__container.about-company__container_color_orange
+                        .about-company__icon
+                            include ..\blocks\about-company\checkedmark_114531
+                        .about-company__text Satisfaction guranteed
