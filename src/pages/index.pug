@@ -1,7 +1,10 @@
 extends ../blocks/common/layout
 
 block head 
+    link(rel="stylesheet" type="text/css" href="fonts.css")
     title First git project
 
 block content
-    h1 Hello, World
+    header.header
+        include ..\blocks\nav\nav.pug
+
