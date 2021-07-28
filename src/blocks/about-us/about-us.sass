@@ -4,17 +4,15 @@
     &__wrapper
         position: relative
         width: 1140px
-        height: 700px
+        height: 1000px
         display: flex
         align-items: center
-        border: 1px solid red
     &__img
         display: inline-block
         width: 555px
-        height: 700px
-        border: 1px solid red
+        height: auto
+        z-index: 0
     &__inner
-        float: right
         position: absolute
         display: flex
         width: 100%
@@ -22,6 +20,48 @@
         align-items: center
     &__container
         margin-left: 490px
-        width: 652px
-        height: 550px
-        border: 1px solid red
+        max-width: 652px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        position: relative
+        background: #fff
+    &__title-and-text
+        margin: 0 82px 90px 82px
+    &__row
+        display: flex
+    &__color-block
+        width: 25%
+        height: 3px
+        background: green
+        &_color
+            &_red
+                background-color: #FC5F45
+            &_green
+                background-color: #38C695
+            &_purple
+                background-color: #B27CF5
+            &_yellow
+                background-color: #FEB960
+
+@media screen and ( max-width: 1000px )
+    .about-us
+        &__img
+            width: 100%
+        &__wrapper
+            flex-direction: column
+            height: auto
+            padding: 150px 0
+        &__inner
+            position: static
+            display: flex
+            width: auto
+            height: auto
+        &__container
+            margin-left: 0px
+            max-width: 652px
+
+@media screen and ( max-width: 400px )
+    .about-us
+        &__title-and-text
+            margin: 0 40px 90px 40px
