@@ -1,0 +1,59 @@
+.our-focus
+    z-index: -2
+    background-color: #f7f7f7
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-content: center
+    padding-bottom: 140px
+    &__title-and-text
+        margin-top: 100px
+    &__row
+        max-width: 1140px
+        margin-top: 67px
+        display: flex
+        justify-content: space-around
+
+    &__card
+        background-color: #fff
+        max-width: 263px
+        box-shadow: 0 0 10px #E7E7E7
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        padding-top: 58px
+        margin: 10px
+
+    &__subtitle
+        font-size: 20px
+        font-family: "Poppins"
+        color: rgb(49, 49, 49)
+        text-align: center
+        margin-bottom: 23px
+        margin-top: 25px
+
+    &__text
+        font-size: 15px
+        font-family: "Poppins"
+        color: rgb(97, 97, 97)
+        text-align: center
+        margin: 0 10px 62px 10px
+    &__line
+        width: 100%
+        height: 3px
+        &_color
+            &_red
+                background-color: #FC5F45
+            &_green
+                background-color: #38C695
+            &_purple
+                background-color: #B27CF5
+            &_yellow
+                background-color: #FEB960
+
+@media screen and ( max-width: 800px )
+    .our-focus
+        &__row
+            flex-wrap: wrap
