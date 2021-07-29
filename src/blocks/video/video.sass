@@ -1,0 +1,45 @@
+.video
+    display: flex
+    justify-content: center
+    background: #3F4049
+    width: 100%
+    overflow: hidden
+    position: relative
+    align-items: center
+    &__video
+        background: #3F4049
+        position: absolute
+        width: 100%
+        height: auto
+    &__container
+        z-index: 10
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__text
+        font-size: 30px
+        font-family: "Poppins"
+        color: #fff
+        text-align: center
+        margin-bottom: 27px
+        margin-top: 138px
+    &__btn-play
+    &__btn-pause
+        display: none
+        fill: #38C695
+        width: 80px
+
+    &__help
+        font-size: 15px
+        font-family: "Poppins"
+        color: #fff
+        text-align: center
+        margin-bottom: 150px
+        margin-top: 37px
+
+@media screen and ( max-width: 900px )
+    .video
+        &__video
+            width: auto
+            height: 100%
