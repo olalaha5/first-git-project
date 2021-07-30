@@ -1,0 +1,10 @@
+mixin card(src, text)
+    .card 
+        img(src=src).card__img
+        .card__wrapper
+            .card__color-row
+                .color-block.color-block_background_red.color-block_width_25
+                .color-block.color-block_background_green.color-block_width_25
+                .color-block.color-block_background_purple.color-block_width_25
+                .color-block.color-block_background_orange.color-block_width_25
+            .card__text= text

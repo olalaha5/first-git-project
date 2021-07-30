@@ -42,20 +42,9 @@
     &__container
         display: flex
         flex-wrap: wrap
-        justify-content: center
+        align-items: center
         margin-bottom: 40px
-        &_color_green
-            fill: #38C695
-            color: #38C695
-            width: 200px
-        &_color_purple
-            fill: #B27CF5
-            color: #B27CF5
-            width: 180px
-        &_color_orange
-            fill: #FEB960
-            color: #FEB960
-            width: 240px
+        flex-direction: column
     &__icon
         width: 40px
         height: 40px
@@ -70,7 +59,6 @@
     .about-company
         background-size: auto 100%
 
-        
 @media screen and ( max-width: 690px )
     .about-company
         &__tagline

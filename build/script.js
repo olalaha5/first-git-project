@@ -6,15 +6,6 @@ let help = document.querySelector('.video__help')
 let video = document.querySelector('.video__video')
 
 
-// alert(document.cli)
-// if (video.clientWidth > document.clientWidth) {
-//     video.width = `${container.clientWidth}`
-// } else {
-//     video.height = `${container.clientHeight}`
-// }
-
-
-
 btnPlay.addEventListener('click', () => {
     video.play();
     btnPlay.style.display = 'none';

@@ -1,340 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="fonts.css">
-    <title>First git project</title>
-</head>
-
-<body>
-    <header class="header">
-        <nav class="nav header__nav">
-            <div class="nav__wrapper">
-                <div class="nav__title">Alexis</div>
-                <ul class="nav__list">
-                    <li class="nav__item">About Us</li>
-                    <li class="nav__item">Our Focus</li>
-                    <li class="nav__item">Portfolio</li>
-                    <li class="nav__item">Our Team</li>
-                    <li class="nav__item">Work Steps</li>
-                    <li class="nav__item">Pricing</li>
-                    <li class="nav__item">Testimonials</li>
-                    <li class="nav__item">Blog</li>
-                    <li class="nav__item">Contact</li>
-                </ul>
-            </div>
-        </nav>
-        <div class="about-company">
-            <div class="about-company__wrapper">
-                <div class="about-company__tagline">We design things with love and passion.</div><button
-                    class="about-company__btn">Our Works</button>
-                <div class="about-company__row">
-                    <div class="about-company__container about-company__container_color_green">
-                        <div class="about-company__icon"><svg class="about-company__icon" x="0px" y="0px" width="512px"
-                                height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-                                xml:space="preserve">
-                                <g>
-                                    <path
-                                        d="M256,0C114.625,0,0,114.625,0,256s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0z M256,480C132.5,480,32,379.5,32,256S132.5,32,256,32s224,100.5,224,224S379.5,480,256,480z M335.562,265.844 c6.095,10.313,9.156,22.344,9.156,36.125c0,21.156-6.312,38.781-18.906,52.875c-12.594,14.125-30.78,22.438-54.562,24.938V416h-30.313v-36.031c-39.656-4.062-64.188-27.125-73.656-69.125l46.875-12.219c4.344,26.406,18.719,39.594,43.125,39.594c11.406,0,19.844-2.812,25.219-8.469s8.062-12.469,8.062-20.469c0-8.281-2.688-14.563-8.062-18.813c-5.375-4.28-17.344-9.688-35.875-16.25c-16.656-5.78-29.688-11.469-39.063-17.155c-9.375-5.625-17-13.531-22.844-23.688c-5.844-10.188-8.781-22.063-8.781-35.563c0-17.719,5.25-33.688,15.688-47.875c10.438-14.156,26.875-22.813,49.313-25.969V96h30.313v27.969c33.875,4.063,55.813,23.219,65.781,57.5l-41.75,17.125c-8.156-23.5-20.72-35.25-37.781-35.25c-8.563,0-15.438,2.625-20.594,7.875c-5.188,5.25-7.781,11.625-7.781,19.094c0,7.625,2.5,13.469,7.5,17.563c4.969,4.063,15.688,9.094,32.063,15.125c18,6.563,32.125,12.781,42.344,18.625C321.281,247.469,329.438,255.563,335.562,265.844z">
-                                    </path>
-                                </g>
-                            </svg></div>
-                        <div class="about-company__text">Fixed price projects</div>
-                    </div>
-                    <div class="about-company__container about-company__container_color_purple">
-                        <div class="about-company__icon"><svg id="Layer_1" data-name="Layer 1"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                <style>
-                                    .cls-1 {
-                                        transform: scale(1.32) rotate(90deg);
-                                        transform-origin: 50% 50%;
-                                    }
-                                </style>
-                                <path class="cls-1"
-                                    d="M100,175.71a75.7,75.7,0,1,1,75.7-75.7A75.79,75.79,0,0,1,100,175.71Zm0-141.4a65.7,65.7,0,1,0,65.7,65.7A65.77,65.77,0,0,0,100,34.31Z" />
-                                <path class="cls-1"
-                                    d="M75,130a5,5,0,0,1-3.53-8.54L92.93,100l-32-32A5,5,0,0,1,68,60.93l35.54,35.55a5,5,0,0,1,0,7.07l-25,25A5,5,0,0,1,75,130Z" />
-                                <path class="cls-1" d="M170.71,105H150a5,5,0,0,1,0-10h20.71a5,5,0,1,1,0,10Z" />
-                                <path class="cls-1" d="M50,105H29.31a5,5,0,0,1,0-10H50a5,5,0,0,1,0,10Z" />
-                                <path class="cls-1"
-                                    d="M100,175.71a5,5,0,0,1-5-5V150a5,5,0,0,1,10,0v20.71A5,5,0,0,1,100,175.71Z" />
-                                <path class="cls-1"
-                                    d="M100,55a5,5,0,0,1-5-5V29.31a5,5,0,0,1,10,0V50A5,5,0,0,1,100,55Z" />
-                            </svg></div>
-                        <div class="about-company__text">Receive on time</div>
-                    </div>
-                    <div class="about-company__container about-company__container_color_orange">
-                        <div class="about-company__icon">
-                            <?xml version="1.0" encoding="iso-8859-1"?>
-                            <!DOCTYPE svg
-                                PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 611.994 611.994"
-                                style="enable-background:new 0 0 611.994 611.994;" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M248.172,423.918l-89.545-89.534c-5.637-5.637-5.637-14.778,0-20.416c5.643-5.644,14.78-5.644,20.417,0l69.128,69.122l184.796-184.802c5.644-5.643,14.78-5.643,20.417,0c5.644,5.637,5.644,14.78,0,20.417L248.172,423.918z" />
-                                            <path
-                                                d="M306.031,611.994v-14.438l-0.022,14.438C137.286,611.994,0.012,474.726,0,306.003C0,137.274,137.274,0,305.997,0c168.729,0,305.997,137.274,305.997,305.997C612,474.726,474.743,611.994,306.031,611.994z M305.997,28.878c-152.805,0-277.119,124.314-277.119,277.119C28.89,458.796,153.209,583.11,306.009,583.11h0.022c152.788,0,277.091-124.314,277.091-277.113C583.122,153.192,458.802,28.878,305.997,28.878z" />
-                                        </g>
-                                    </g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="about-company__text">Satisfaction guranteed</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="about-us">
-        <div class="about-us__wrapper">
-            <div class="about-us__inner"><img class="about-us__img" src="img/blocks/about-us/image3.png" alt="about us">
-            </div>
-            <div class="about-us__inner about-us__inner_align_left">
-                <div class="about-us__container">
-                    <div class="num">01</div>
-                    <div class="title-and-text about-us__title-and-text">
-                        <h2 class="title-and-text__title">About Us.</h2>
-                        <div class="title-and-text__text">
-                            <p>Analytics release series A financing launch party interaction design android angel
-                                investor. Vesting period social media sales conversion launch party rockstar incubator
-                                customer social proof graphical user interface technology supply chain. Non-disclosure
-                                agreement rockstar creative partner network launch party social proof paradigm shift
-                                long tail influencer. </p><br><span>Monetization validation success. Seed round channels
-                                product management. Customer non-disclosure agreement strategy android growth hacking
-                                ramen buyer.</span>
-                        </div>
-                    </div>
-                    <div class="about-us__row">
-                        <div class="about-us__color-block about-us__color-block_color_red"></div>
-                        <div class="about-us__color-block about-us__color-block_color_green"></div>
-                        <div class="about-us__color-block about-us__color-block_color_purple"></div>
-                        <div class="about-us__color-block about-us__color-block_color_yellow"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="our-focus">
-        <div class="num num_position_center num_color_black-gray">02</div>
-        <div class="title-and-text title-and-text_align_center title-and-text_margin-top_true">
-            <h2 class="title-and-text__title title-and-text__title_margin_small">Our Focus.</h2>
-            <div class="title-and-text__text">We understand your requirement and provide quality works.</div>
-        </div>
-        <div class="our-focus__row">
-            <div class="our-focus__card"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="55px" height="40px">
-                    <path fill-rule="evenodd" fill="rgb(252, 95, 69)"
-                        d="M47.266,39.279 L-0.000,39.279 L-0.000,8.332 L47.266,8.332 L47.266,39.279 ZM45.547,10.051 L1.719,10.051 L1.719,37.560 L45.547,37.560 L45.547,10.051 ZM9.453,6.612 L7.734,6.612 L7.734,0.596 L55.000,0.596 L55.000,31.542 L48.984,31.542 L48.984,29.823 L53.281,29.823 L53.281,2.315 L9.453,2.315 L9.453,6.612 ZM42.969,21.227 L35.234,21.227 L35.234,12.630 L42.969,12.630 L42.969,21.227 ZM41.250,14.349 L36.953,14.349 L36.953,19.507 L41.250,19.507 L41.250,14.349 ZM27.500,34.981 L29.219,34.981 L29.219,12.630 L27.500,12.630 L27.500,34.981 ZM4.297,16.068 L24.922,16.068 L24.922,14.349 L4.297,14.349 L4.297,16.068 ZM4.297,20.367 L22.344,20.367 L22.344,18.648 L4.297,18.648 L4.297,20.367 ZM4.297,24.666 L23.203,24.666 L23.203,22.946 L4.297,22.946 L4.297,24.666 Z" />
-                </svg>
-                <h3 class="our-focus__subtitle">Web Design</h3>
-                <div class="our-focus__text">Analytics release series A financing launch party interaction design
-                    android angel investor.</div>
-                <div class="our-focus__line our-focus__line_color_red"></div>
-            </div>
-            <div class="our-focus__card"> <svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="55px" height="49px">
-                    <path fill-rule="evenodd" fill="rgb(56, 198, 149)"
-                        d="M36.094,7.207 L55.000,0.007 L55.000,41.486 L36.094,48.685 L18.906,41.808 L-0.000,49.008 L-0.000,7.529 L18.906,0.330 L36.094,7.207 ZM19.766,40.304 L35.234,46.428 L35.234,8.711 L19.766,2.587 L19.766,40.304 ZM1.719,46.428 L18.047,40.196 L18.047,2.587 L1.719,8.819 L1.719,46.428 ZM53.281,2.587 L36.953,8.819 L36.953,46.428 L53.281,40.196 L53.281,2.587 Z" />
-                </svg>
-                <h3 class="our-focus__subtitle">UX Design </h3>
-                <div class="our-focus__text">Analytics release series A financing launch party interaction design
-                    android angel investor.</div>
-                <div class="our-focus__line our-focus__line_color_green"></div>
-            </div>
-            <div class="our-focus__card"> <svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="55px" height="43px">
-                    <path fill-rule="evenodd" fill="rgb(178, 124, 245)"
-                        d="M46.406,42.999 L-0.000,42.999 L-0.000,6.893 L46.406,6.893 L46.406,42.999 ZM1.719,8.612 L1.719,31.501 L12.891,20.218 L25.137,34.187 L33.623,29.030 L44.687,38.593 L44.687,8.612 L1.719,8.612 ZM44.687,41.279 L44.687,40.850 L33.408,31.178 L24.707,36.336 L12.891,22.797 L1.719,33.865 L1.719,41.279 L44.687,41.279 ZM7.734,0.016 L55.000,0.016 L55.000,36.122 L47.266,36.122 L47.266,34.402 L53.281,34.402 L53.281,1.735 L9.453,1.735 L9.453,6.034 L7.734,6.034 L7.734,0.016 ZM29.219,18.929 C29.219,17.496 29.719,16.279 30.723,15.275 C31.725,14.272 32.941,13.771 34.375,13.771 C35.807,13.771 37.024,14.272 38.027,15.275 C39.029,16.279 39.531,17.496 39.531,18.929 C39.531,20.362 39.029,21.580 38.027,22.582 C37.024,23.586 35.807,24.086 34.375,24.086 C32.941,24.086 31.725,23.586 30.723,22.582 C29.719,21.580 29.219,20.362 29.219,18.929 ZM30.937,18.929 C30.937,19.932 31.260,20.755 31.904,21.400 C32.549,22.045 33.371,22.367 34.375,22.367 C35.377,22.367 36.201,22.045 36.846,21.400 C37.490,20.755 37.812,19.932 37.812,18.929 C37.812,17.926 37.490,17.102 36.846,16.457 C36.201,15.812 35.377,15.490 34.375,15.490 C33.371,15.490 32.549,15.812 31.904,16.457 C31.260,17.102 30.937,17.926 30.937,18.929 Z" />
-                </svg>
-                <h3 class="our-focus__subtitle">Photogrpahy</h3>
-                <div class="our-focus__text">Analytics release series A financing launch party interaction design
-                    android angel investor.</div>
-                <div class="our-focus__line our-focus__line_color_purple"></div>
-            </div>
-            <div class="our-focus__card"> <svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="41px">
-                    <path fill-rule="evenodd" fill="rgb(254, 185, 96)"
-                        d="M28.534,40.016 L28.534,10.016 L44.466,10.016 L44.466,40.016 L28.534,40.016 ZM43.529,10.954 L29.471,10.954 L29.471,13.766 L43.529,13.766 L43.529,10.954 ZM43.529,14.704 L29.471,14.704 L29.471,33.454 L43.529,33.454 L43.529,14.704 ZM43.529,34.391 L29.471,34.391 L29.471,39.079 L43.529,39.079 L43.529,34.391 ZM36.500,35.328 C36.890,35.328 37.222,35.466 37.496,35.739 C37.769,36.013 37.906,36.345 37.906,36.735 C37.906,37.126 37.769,37.458 37.496,37.731 C37.222,38.005 36.890,38.141 36.500,38.141 C36.109,38.141 35.777,38.005 35.504,37.731 C35.231,37.458 35.094,37.126 35.094,36.735 C35.094,36.345 35.231,36.013 35.504,35.739 C35.777,35.466 36.109,35.328 36.500,35.328 ZM36.500,37.204 C36.812,37.204 36.969,37.048 36.969,36.735 C36.969,36.423 36.812,36.266 36.500,36.266 C36.187,36.266 36.031,36.423 36.031,36.735 C36.031,37.048 36.187,37.204 36.500,37.204 ZM38.374,12.828 L34.626,12.828 L34.626,11.892 L38.374,11.892 L38.374,12.828 ZM0.755,0.016 L28.246,0.016 L28.246,40.016 L0.755,40.016 L0.755,0.016 ZM2.004,38.767 L26.996,38.767 L26.996,32.516 L2.004,32.516 L2.004,38.767 ZM2.004,31.267 L26.996,31.267 L26.996,6.266 L2.004,6.266 L2.004,31.267 ZM2.004,5.016 L26.996,5.016 L26.996,1.266 L2.004,1.266 L2.004,5.016 ZM12.001,2.516 L16.999,2.516 L16.999,3.766 L12.001,3.766 L12.001,2.516 ZM14.500,37.516 C13.979,37.516 13.536,37.334 13.172,36.969 C12.808,36.606 12.626,36.162 12.626,35.641 C12.626,35.121 12.808,34.678 13.172,34.313 C13.536,33.949 13.979,33.766 14.500,33.766 C15.020,33.766 15.463,33.949 15.828,34.313 C16.192,34.678 16.375,35.121 16.375,35.641 C16.375,36.162 16.192,36.606 15.828,36.969 C15.463,37.334 15.020,37.516 14.500,37.516 ZM14.500,35.017 C14.083,35.017 13.875,35.225 13.875,35.641 C13.875,36.059 14.083,36.266 14.500,36.266 C14.916,36.266 15.125,36.059 15.125,35.641 C15.125,35.225 14.916,35.017 14.500,35.017 Z" />
-                </svg>
-                <h3 class="our-focus__subtitle">App Development</h3>
-                <div class="our-focus__text">Analytics release series A financing launch party interaction design
-                    android angel investor.</div>
-                <div class="our-focus__line our-focus__line_color_yellow"></div>
-            </div>
-        </div>
-    </div>
-    <div class="video"><video class="video__video"
-            src="https://mazwai.com/videvo_files/video/free/2016-10/small_watermarked/161021_04_CoffeeShop_RecordPlayer_1080p_preview.webm"></video>
-        <div class="video__container">
-            <div class="video__text">Explore Our Awesomeness</div><svg class='video__btn-play'
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px"
-                height="80px">
-                <path fill-rule="evenodd" fill="rgb(56, 198, 149)"
-                    d="M34.687,25.312 L52.500,39.062 L52.500,40.937 L34.687,54.687 L32.500,53.750 L32.500,26.250 L34.687,25.312 ZM35.000,51.249 L49.219,39.999 L35.000,28.749 L35.000,51.249 ZM80.000,39.999 C80.000,51.042 76.094,60.468 68.281,68.281 C60.469,76.093 51.040,80.000 40.000,80.000 C28.957,80.000 19.531,76.093 11.719,68.281 C3.906,60.468 -0.000,51.042 -0.000,39.999 C-0.000,28.960 3.906,19.531 11.719,11.719 C19.531,3.906 28.957,-0.000 40.000,-0.000 C51.040,-0.000 60.469,3.906 68.281,11.719 C76.094,19.531 80.000,28.960 80.000,39.999 ZM77.500,39.999 C77.500,29.792 73.852,20.937 66.562,13.437 C59.062,6.147 50.207,2.500 40.000,2.500 C29.790,2.500 20.937,6.147 13.437,13.437 C6.145,20.937 2.500,29.792 2.500,39.999 C2.500,50.210 6.145,59.062 13.437,66.562 C20.937,73.854 29.790,77.500 40.000,77.500 C50.207,77.500 59.062,73.854 66.562,66.562 C73.852,59.062 77.500,50.210 77.500,39.999 Z" />
-            </svg><svg class='video__btn-pause' width="80px" height="80px" viewBox="0 0 59 59" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Page-1" stroke="none" fill='#38C695' fill-rule="evenodd">
-                    <g id="Pause" fill='#38C695'>
-                        <path
-                            d="M29.6,3.3 C43.9,3.3 55.6,15 55.6,29.3 C55.6,43.6 43.9,55.3 29.6,55.3 C15.3,55.3 3.6,43.6 3.6,29.3 C3.6,15 15.3,3.3 29.6,3.3 L29.6,3.3 Z M29.6,0.3 C13.6,0.3 0.6,13.3 0.6,29.3 C0.6,45.3 13.6,58.3 29.6,58.3 C45.6,58.3 58.6,45.3 58.6,29.3 C58.6,13.2 45.7,0.3 29.6,0.3 L29.6,0.3 Z">
-                        </path>
-                        <rect x="21.3" y="18.1" width="3" height="22.3"></rect>
-                        <rect x="34.3" y="18.1" width="3" height="22.3"></rect>
-                    </g>
-                </g>
-            </svg>
-            <div class="video__help">Click to play the video</div>
-        </div>
-    </div>
-    <div class="portfolio">
-        <div class="num num_position_center">03</div>
-        <div class="title-and-text title-and-text_align_center title-and-text_margin-top_true">
-            <div class="title-and-text__title">Portfolio.</div>
-            <div class="title-and-text__text">We understand your requirement and provide quality works.</div>
-        </div>
-        <div class="portfolio__cards">
-            <div class="portfolio__wrapper">
-                <div class="card"><img class="card__img" src="img/blocks/portfolio/Single Item.png">
-                    <div class="card__wrapper">
-                        <div class="card__color-row">
-                            <div class="card__color card__color_color_red"></div>
-                            <div class="card__color card__color_color_green"></div>
-                            <div class="card__color card__color_color_purple"></div>
-                            <div class="card__color card__color_color_orange"></div>
-                        </div>
-                        <div class="card__text">some project</div>
-                    </div>
-                </div>
-                <div class="card"><img class="card__img" src="img/blocks/portfolio/item 2.png">
-                    <div class="card__wrapper">
-                        <div class="card__color-row">
-                            <div class="card__color card__color_color_red"></div>
-                            <div class="card__color card__color_color_green"></div>
-                            <div class="card__color card__color_color_purple"></div>
-                            <div class="card__color card__color_color_orange"></div>
-                        </div>
-                        <div class="card__text">some project</div>
-                    </div>
-                </div>
-                <div class="card"> <img class="card__img" src="img/blocks/portfolio/item 3.png">
-                    <div class="card__wrapper">
-                        <div class="card__color-row">
-                            <div class="card__color card__color_color_red"></div>
-                            <div class="card__color card__color_color_green"></div>
-                            <div class="card__color card__color_color_purple"></div>
-                            <div class="card__color card__color_color_orange"></div>
-                        </div>
-                        <div class="card__text">some project</div>
-                    </div>
-                </div>
-                <div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 0.png">
-                    <div class="card__wrapper">
-                        <div class="card__color-row">
-                            <div class="card__color card__color_color_red"></div>
-                            <div class="card__color card__color_color_green"></div>
-                            <div class="card__color card__color_color_purple"></div>
-                            <div class="card__color card__color_color_orange"></div>
-                        </div>
-                        <div class="card__text">some project</div>
-                    </div>
-                </div>
-                <div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema.png">
-                    <div class="card__wrapper">
-                        <div class="card__color-row">
-                            <div class="card__color card__color_color_red"></div>
-                            <div class="card__color card__color_color_green"></div>
-                            <div class="card__color card__color_color_purple"></div>
-                            <div class="card__color card__color_color_orange"></div>
-                        </div>
-                        <div class="card__text">some project</div>
-                    </div>
-                </div>
-                <div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 2.png">
-                    <div class="card__wrapper">
-                        <div class="card__color-row">
-                            <div class="card__color card__color_color_red"></div>
-                            <div class="card__color card__color_color_green"></div>
-                            <div class="card__color card__color_color_purple"></div>
-                            <div class="card__color card__color_color_orange"></div>
-                        </div>
-                        <div class="card__text">some project</div>
-                    </div>
-                </div>
-                <div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 3.png">
-                    <div class="card__wrapper">
-                        <div class="card__color-row">
-                            <div class="card__color card__color_color_red"></div>
-                            <div class="card__color card__color_color_green"></div>
-                            <div class="card__color card__color_color_purple"></div>
-                            <div class="card__color card__color_color_orange"></div>
-                        </div>
-                        <div class="card__text">some project</div>
-                    </div>
-                </div>
-                <div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 5.png">
-                    <div class="card__wrapper">
-                        <div class="card__color-row">
-                            <div class="card__color card__color_color_red"></div>
-                            <div class="card__color card__color_color_green"></div>
-                            <div class="card__color card__color_color_purple"></div>
-                            <div class="card__color card__color_color_orange"></div>
-                        </div>
-                        <div class="card__text">some project</div>
-                    </div>
-                </div>
-                <div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 6.png">
-                    <div class="card__wrapper">
-                        <div class="card__color-row">
-                            <div class="card__color card__color_color_red"></div>
-                            <div class="card__color card__color_color_green"></div>
-                            <div class="card__color card__color_color_purple"></div>
-                            <div class="card__color card__color_color_orange"></div>
-                        </div>
-                        <div class="card__text">some project</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css"><link rel="stylesheet" type="text/css" href="fonts.css"><title>First git project</title></head><body><header class="header"><nav class="nav header__nav"><div class="nav__wrapper"><div class="nav__title">Alexis</div><ul class="nav__list"><li class="nav__item">About Us</li><li class="nav__item">Our Focus</li><li class="nav__item">Portfolio</li><li class="nav__item">Our Team</li><li class="nav__item">Work Steps</li><li class="nav__item">Pricing</li><li class="nav__item">Testimonials</li><li class="nav__item">Blog</li><li class="nav__item">Contact</li></ul></div></nav><div class="about-company"> <div class="about-company__wrapper"><div class="about-company__tagline">We design things with love and passion.</div><button class="about-company__btn">Our Works</button><div class="about-company__row"><div class="about-company__container color-block color-block_color_green"><div class="about-company__icon"><svg class="about-company__icon" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><path d="M256,0C114.625,0,0,114.625,0,256s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0z M256,480C132.5,480,32,379.5,32,256S132.5,32,256,32s224,100.5,224,224S379.5,480,256,480z M335.562,265.844 c6.095,10.313,9.156,22.344,9.156,36.125c0,21.156-6.312,38.781-18.906,52.875c-12.594,14.125-30.78,22.438-54.562,24.938V416h-30.313v-36.031c-39.656-4.062-64.188-27.125-73.656-69.125l46.875-12.219c4.344,26.406,18.719,39.594,43.125,39.594c11.406,0,19.844-2.812,25.219-8.469s8.062-12.469,8.062-20.469c0-8.281-2.688-14.563-8.062-18.813c-5.375-4.28-17.344-9.688-35.875-16.25c-16.656-5.78-29.688-11.469-39.063-17.155c-9.375-5.625-17-13.531-22.844-23.688c-5.844-10.188-8.781-22.063-8.781-35.563c0-17.719,5.25-33.688,15.688-47.875c10.438-14.156,26.875-22.813,49.313-25.969V96h30.313v27.969c33.875,4.063,55.813,23.219,65.781,57.5l-41.75,17.125c-8.156-23.5-20.72-35.25-37.781-35.25c-8.563,0-15.438,2.625-20.594,7.875c-5.188,5.25-7.781,11.625-7.781,19.094c0,7.625,2.5,13.469,7.5,17.563c4.969,4.063,15.688,9.094,32.063,15.125c18,6.563,32.125,12.781,42.344,18.625C321.281,247.469,329.438,255.563,335.562,265.844z"></path></g></svg></div><div class="about-company__text">Fixed price projects</div></div><div class="about-company__container color-block color-block_color_purple"><div class="about-company__icon"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><style>.cls-1{transform:scale(1.32) rotate(90deg);transform-origin: 50% 50%;}</style><path class="cls-1" d="M100,175.71a75.7,75.7,0,1,1,75.7-75.7A75.79,75.79,0,0,1,100,175.71Zm0-141.4a65.7,65.7,0,1,0,65.7,65.7A65.77,65.77,0,0,0,100,34.31Z"/><path class="cls-1" d="M75,130a5,5,0,0,1-3.53-8.54L92.93,100l-32-32A5,5,0,0,1,68,60.93l35.54,35.55a5,5,0,0,1,0,7.07l-25,25A5,5,0,0,1,75,130Z"/><path class="cls-1" d="M170.71,105H150a5,5,0,0,1,0-10h20.71a5,5,0,1,1,0,10Z"/><path class="cls-1" d="M50,105H29.31a5,5,0,0,1,0-10H50a5,5,0,0,1,0,10Z"/><path class="cls-1" d="M100,175.71a5,5,0,0,1-5-5V150a5,5,0,0,1,10,0v20.71A5,5,0,0,1,100,175.71Z"/><path class="cls-1" d="M100,55a5,5,0,0,1-5-5V29.31a5,5,0,0,1,10,0V50A5,5,0,0,1,100,55Z"/></svg></div><div class="about-company__text">Receive on time</div></div><div class="about-company__container color-block color-block_color_orange"><div class="about-company__icon"><?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 611.994 611.994" style="enable-background:new 0 0 611.994 611.994;" xml:space="preserve">
+<g>
+<g>
+<g>
+<path d="M248.172,423.918l-89.545-89.534c-5.637-5.637-5.637-14.778,0-20.416c5.643-5.644,14.78-5.644,20.417,0l69.128,69.122l184.796-184.802c5.644-5.643,14.78-5.643,20.417,0c5.644,5.637,5.644,14.78,0,20.417L248.172,423.918z"/>
+<path d="M306.031,611.994v-14.438l-0.022,14.438C137.286,611.994,0.012,474.726,0,306.003C0,137.274,137.274,0,305.997,0c168.729,0,305.997,137.274,305.997,305.997C612,474.726,474.743,611.994,306.031,611.994z M305.997,28.878c-152.805,0-277.119,124.314-277.119,277.119C28.89,458.796,153.209,583.11,306.009,583.11h0.022c152.788,0,277.091-124.314,277.091-277.113C583.122,153.192,458.802,28.878,305.997,28.878z"/>
+</g>
+</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg></div><div class="about-company__text">Satisfaction guranteed</div></div></div></div></div></header><div class="about-us"> <div class="about-us__wrapper"><div class="about-us__inner"><img class="about-us__img" src="img/blocks/about-us/image3.png" alt="about us"></div><div class="about-us__inner about-us__inner_align_left"><div class="about-us__container"><div class="num">01</div><div class="title-and-text about-us__title-and-text"><h2 class="title-and-text__title">About Us.</h2><div class="title-and-text__text"><p>Analytics release series A financing launch party interaction design android angel investor. Vesting period social media sales conversion launch party rockstar incubator customer social proof graphical user interface technology supply chain. Non-disclosure agreement rockstar creative partner network launch party social proof paradigm shift long tail influencer. </p><br><span>Monetization validation success. Seed round channels product management. Customer non-disclosure agreement strategy android growth hacking ramen buyer.</span></div></div><div class="about-us__row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div></div></div></div></div><div class="common-block common-block_color_gray"><div class="num num_position_center num_color_black-gray">02</div><div class="title-and-text title-and-text_align_center"><h2 class="title-and-text__title title-and-text__title_margin_small">Our Focus.</h2><div class="title-and-text__text">We understand your requirement and provide quality works.</div></div><div class="common-block__container"><div class="our-focus">   <div class="our-focus__row"> <div class="our-focus__card"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55px" height="40px"><path fill-rule="evenodd"  fill="rgb(252, 95, 69)" d="M47.266,39.279 L-0.000,39.279 L-0.000,8.332 L47.266,8.332 L47.266,39.279 ZM45.547,10.051 L1.719,10.051 L1.719,37.560 L45.547,37.560 L45.547,10.051 ZM9.453,6.612 L7.734,6.612 L7.734,0.596 L55.000,0.596 L55.000,31.542 L48.984,31.542 L48.984,29.823 L53.281,29.823 L53.281,2.315 L9.453,2.315 L9.453,6.612 ZM42.969,21.227 L35.234,21.227 L35.234,12.630 L42.969,12.630 L42.969,21.227 ZM41.250,14.349 L36.953,14.349 L36.953,19.507 L41.250,19.507 L41.250,14.349 ZM27.500,34.981 L29.219,34.981 L29.219,12.630 L27.500,12.630 L27.500,34.981 ZM4.297,16.068 L24.922,16.068 L24.922,14.349 L4.297,14.349 L4.297,16.068 ZM4.297,20.367 L22.344,20.367 L22.344,18.648 L4.297,18.648 L4.297,20.367 ZM4.297,24.666 L23.203,24.666 L23.203,22.946 L4.297,22.946 L4.297,24.666 Z"/></svg><h3 class="our-focus__subtitle">Web Design</h3><div class="our-focus__text">Analytics release series A financing launch party interaction design android angel investor.</div><div class="color-block color-block_background_red color-block_width_100"></div></div><div class="our-focus__card"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55px" height="49px"><path fill-rule="evenodd"  fill="rgb(56, 198, 149)" d="M36.094,7.207 L55.000,0.007 L55.000,41.486 L36.094,48.685 L18.906,41.808 L-0.000,49.008 L-0.000,7.529 L18.906,0.330 L36.094,7.207 ZM19.766,40.304 L35.234,46.428 L35.234,8.711 L19.766,2.587 L19.766,40.304 ZM1.719,46.428 L18.047,40.196 L18.047,2.587 L1.719,8.819 L1.719,46.428 ZM53.281,2.587 L36.953,8.819 L36.953,46.428 L53.281,40.196 L53.281,2.587 Z"/></svg><h3 class="our-focus__subtitle">UX Design </h3><div class="our-focus__text">Analytics release series A financing launch party interaction design android angel investor.</div><div class="color-block color-block_background_green color-block_width_100"></div></div><div class="our-focus__card"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55px" height="43px"><path fill-rule="evenodd"  fill="rgb(178, 124, 245)" d="M46.406,42.999 L-0.000,42.999 L-0.000,6.893 L46.406,6.893 L46.406,42.999 ZM1.719,8.612 L1.719,31.501 L12.891,20.218 L25.137,34.187 L33.623,29.030 L44.687,38.593 L44.687,8.612 L1.719,8.612 ZM44.687,41.279 L44.687,40.850 L33.408,31.178 L24.707,36.336 L12.891,22.797 L1.719,33.865 L1.719,41.279 L44.687,41.279 ZM7.734,0.016 L55.000,0.016 L55.000,36.122 L47.266,36.122 L47.266,34.402 L53.281,34.402 L53.281,1.735 L9.453,1.735 L9.453,6.034 L7.734,6.034 L7.734,0.016 ZM29.219,18.929 C29.219,17.496 29.719,16.279 30.723,15.275 C31.725,14.272 32.941,13.771 34.375,13.771 C35.807,13.771 37.024,14.272 38.027,15.275 C39.029,16.279 39.531,17.496 39.531,18.929 C39.531,20.362 39.029,21.580 38.027,22.582 C37.024,23.586 35.807,24.086 34.375,24.086 C32.941,24.086 31.725,23.586 30.723,22.582 C29.719,21.580 29.219,20.362 29.219,18.929 ZM30.937,18.929 C30.937,19.932 31.260,20.755 31.904,21.400 C32.549,22.045 33.371,22.367 34.375,22.367 C35.377,22.367 36.201,22.045 36.846,21.400 C37.490,20.755 37.812,19.932 37.812,18.929 C37.812,17.926 37.490,17.102 36.846,16.457 C36.201,15.812 35.377,15.490 34.375,15.490 C33.371,15.490 32.549,15.812 31.904,16.457 C31.260,17.102 30.937,17.926 30.937,18.929 Z"/></svg><h3 class="our-focus__subtitle">Photogrpahy</h3><div class="our-focus__text">Analytics release series A financing launch party interaction design android angel investor.</div><div class="color-block color-block_background_purple color-block_width_100"></div></div><div class="our-focus__card"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="41px"><path fill-rule="evenodd"  fill="rgb(254, 185, 96)" d="M28.534,40.016 L28.534,10.016 L44.466,10.016 L44.466,40.016 L28.534,40.016 ZM43.529,10.954 L29.471,10.954 L29.471,13.766 L43.529,13.766 L43.529,10.954 ZM43.529,14.704 L29.471,14.704 L29.471,33.454 L43.529,33.454 L43.529,14.704 ZM43.529,34.391 L29.471,34.391 L29.471,39.079 L43.529,39.079 L43.529,34.391 ZM36.500,35.328 C36.890,35.328 37.222,35.466 37.496,35.739 C37.769,36.013 37.906,36.345 37.906,36.735 C37.906,37.126 37.769,37.458 37.496,37.731 C37.222,38.005 36.890,38.141 36.500,38.141 C36.109,38.141 35.777,38.005 35.504,37.731 C35.231,37.458 35.094,37.126 35.094,36.735 C35.094,36.345 35.231,36.013 35.504,35.739 C35.777,35.466 36.109,35.328 36.500,35.328 ZM36.500,37.204 C36.812,37.204 36.969,37.048 36.969,36.735 C36.969,36.423 36.812,36.266 36.500,36.266 C36.187,36.266 36.031,36.423 36.031,36.735 C36.031,37.048 36.187,37.204 36.500,37.204 ZM38.374,12.828 L34.626,12.828 L34.626,11.892 L38.374,11.892 L38.374,12.828 ZM0.755,0.016 L28.246,0.016 L28.246,40.016 L0.755,40.016 L0.755,0.016 ZM2.004,38.767 L26.996,38.767 L26.996,32.516 L2.004,32.516 L2.004,38.767 ZM2.004,31.267 L26.996,31.267 L26.996,6.266 L2.004,6.266 L2.004,31.267 ZM2.004,5.016 L26.996,5.016 L26.996,1.266 L2.004,1.266 L2.004,5.016 ZM12.001,2.516 L16.999,2.516 L16.999,3.766 L12.001,3.766 L12.001,2.516 ZM14.500,37.516 C13.979,37.516 13.536,37.334 13.172,36.969 C12.808,36.606 12.626,36.162 12.626,35.641 C12.626,35.121 12.808,34.678 13.172,34.313 C13.536,33.949 13.979,33.766 14.500,33.766 C15.020,33.766 15.463,33.949 15.828,34.313 C16.192,34.678 16.375,35.121 16.375,35.641 C16.375,36.162 16.192,36.606 15.828,36.969 C15.463,37.334 15.020,37.516 14.500,37.516 ZM14.500,35.017 C14.083,35.017 13.875,35.225 13.875,35.641 C13.875,36.059 14.083,36.266 14.500,36.266 C14.916,36.266 15.125,36.059 15.125,35.641 C15.125,35.225 14.916,35.017 14.500,35.017 Z"/></svg><h3 class="our-focus__subtitle">App Development</h3><div class="our-focus__text">Analytics release series A financing launch party interaction design android angel investor.</div><div class="color-block color-block_background_orange color-block_width_100"></div></div></div></div></div></div><div class="video"><video class="video__video" src="https://mazwai.com/videvo_files/video/free/2016-10/small_watermarked/161021_04_CoffeeShop_RecordPlayer_1080p_preview.webm"></video><div class="video__container"><div class="video__text">Explore Our Awesomeness</div><svg class='video__btn-play' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="80px"><path fill-rule="evenodd"  fill="rgb(56, 198, 149)" d="M34.687,25.312 L52.500,39.062 L52.500,40.937 L34.687,54.687 L32.500,53.750 L32.500,26.250 L34.687,25.312 ZM35.000,51.249 L49.219,39.999 L35.000,28.749 L35.000,51.249 ZM80.000,39.999 C80.000,51.042 76.094,60.468 68.281,68.281 C60.469,76.093 51.040,80.000 40.000,80.000 C28.957,80.000 19.531,76.093 11.719,68.281 C3.906,60.468 -0.000,51.042 -0.000,39.999 C-0.000,28.960 3.906,19.531 11.719,11.719 C19.531,3.906 28.957,-0.000 40.000,-0.000 C51.040,-0.000 60.469,3.906 68.281,11.719 C76.094,19.531 80.000,28.960 80.000,39.999 ZM77.500,39.999 C77.500,29.792 73.852,20.937 66.562,13.437 C59.062,6.147 50.207,2.500 40.000,2.500 C29.790,2.500 20.937,6.147 13.437,13.437 C6.145,20.937 2.500,29.792 2.500,39.999 C2.500,50.210 6.145,59.062 13.437,66.562 C20.937,73.854 29.790,77.500 40.000,77.500 C50.207,77.500 59.062,73.854 66.562,66.562 C73.852,59.062 77.500,50.210 77.500,39.999 Z"/></svg><svg class='video__btn-pause' width="80px" height="80px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" fill='#38C695' fill-rule="evenodd">
+<g id="Pause" fill='#38C695'>
+<path d="M29.6,3.3 C43.9,3.3 55.6,15 55.6,29.3 C55.6,43.6 43.9,55.3 29.6,55.3 C15.3,55.3 3.6,43.6 3.6,29.3 C3.6,15 15.3,3.3 29.6,3.3 L29.6,3.3 Z M29.6,0.3 C13.6,0.3 0.6,13.3 0.6,29.3 C0.6,45.3 13.6,58.3 29.6,58.3 C45.6,58.3 58.6,45.3 58.6,29.3 C58.6,13.2 45.7,0.3 29.6,0.3 L29.6,0.3 Z"></path>
+<rect x="21.3" y="18.1" width="3" height="22.3"></rect>
+<rect x="34.3" y="18.1" width="3" height="22.3"></rect>
+</g>
+</g>
+</svg><div class="video__help">Click to play the video</div></div></div><div class="common-block"><div class="num num_position_center">03</div><div class="title-and-text title-and-text_align_center"><h2 class="title-and-text__title title-and-text__title_margin_small">Portfolio.</h2><div class="title-and-text__text">We understand your requirement and provide quality works.</div></div><div class="common-block__container"><div class="portfolio"> <div class="portfolio__cards"><div class="portfolio__wrapper"> <div class="card"> <img class="card__img" src="img/blocks/portfolio/Single Item.png"><div class="card__wrapper"><div class="card__color-row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div><div class="card__text">some project</div></div></div><div class="card"> <img class="card__img" src="img/blocks/portfolio/item 2.png"><div class="card__wrapper"><div class="card__color-row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div><div class="card__text">some project</div></div></div><div class="card"> <img class="card__img" src="img/blocks/portfolio/item 3.png"><div class="card__wrapper"><div class="card__color-row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div><div class="card__text">some project</div></div></div><div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 0.png"><div class="card__wrapper"><div class="card__color-row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div><div class="card__text">some project</div></div></div><div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema.png"><div class="card__wrapper"><div class="card__color-row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div><div class="card__text">some project</div></div></div><div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 2.png"><div class="card__wrapper"><div class="card__color-row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div><div class="card__text">some project</div></div></div><div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 3.png"><div class="card__wrapper"><div class="card__color-row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div><div class="card__text">some project</div></div></div><div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 5.png"><div class="card__wrapper"><div class="card__color-row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div><div class="card__text">some project</div></div></div><div class="card"> <img class="card__img" src="img/blocks/portfolio/portfolio itema 6.png"><div class="card__wrapper"><div class="card__color-row"><div class="color-block color-block_background_red color-block_width_25"></div><div class="color-block color-block_background_green color-block_width_25"></div><div class="color-block color-block_background_purple color-block_width_25"></div><div class="color-block color-block_background_orange color-block_width_25"></div></div><div class="card__text">some project</div></div></div></div></div></div></div></div><script src="script.js"></script></body></html>
