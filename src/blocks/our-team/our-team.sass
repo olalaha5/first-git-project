@@ -1,0 +1,127 @@
+.our-team
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__wrapper
+        max-width: 1132px
+        display: flex
+        flex-wrap: wrap
+    &__row
+        max-width: 1140px
+        display: flex
+        justify-content: space-around
+        margin: -10px 0
+        margin-bottom: 32px
+        position: relative
+        &_num_second
+            display: none
+            margin-top: 32px
+            margin-bottom: -10px
+
+    &__card
+        background: #fff
+        max-width: 263px
+        box-shadow: 0 0 10px #e7e7e7
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        margin: 10px
+    &__img
+        width: 100%
+        margin-bottom: 8px
+    &__name
+        font-size: 18px
+        font-family: "Poppins"
+        text-align: center
+        margin-bottom: 5px
+    &__card-text
+        font-size: 13px
+        font-family: "Poppins"
+        color: rgb(97, 97, 97)
+        text-align: center
+        margin-bottom: 17px
+    &__slider
+        background: #fff
+        width: 100%
+        margin: 0 10px
+        box-shadow: 0 0 10px #e7e7e7
+    &__triangle
+        transition: 0.5s
+        border: 30px solid #fff0
+        border-bottom: 40px solid #fff
+        bottom: 69px
+        width: 0
+        height: 0
+        position: relative
+    &__container
+        position: relative
+        bottom: 70px
+        padding: 70px 98px 0 98px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__text-block
+        margin-right: 80px
+    &__wrap
+        display: flex
+        align-items: center
+        width: 200px
+        justify-content: space-between
+
+    &__title
+        font-size: 20px
+        font-family: "Poppins"
+        color: rgb(39, 39, 39)
+    &__slider-text
+        font-size: 15px
+        font-family: "Poppins"
+        color: rgb(97, 97, 97)
+    &__list
+        list-style-type: none
+        padding: 0
+    &__item
+        font-size: 15px
+        font-family: "Poppins"
+        color: rgb(97, 97, 97)
+    &__link
+        text-decoration: none
+        &:any-link
+            color: rgb(97, 97, 97)
+
+@media screen and ( max-width: 900px )
+    .our-team
+        &__inner
+            flex-direction: column
+        &__text-block
+            margin-right: 0
+            margin-bottom: 20px
+
+@media screen and ( max-width: 560px )
+    .our-team
+        &__row
+            &_num_second
+                display: flex
+        &__card
+            &_num_second
+                display: none
+
+//         &__wrapper
+//             flex-wrap: nowrap
+//             width: 100%
+//             height: 100%
+//         &__row
+//             flex-direction: column
+//             margin: -10px 0
+//             margin-right: 22px
+//         &__slider
+//             width: 100%
+//             height: auto
+
+@media screen and ( max-width: 650px )
+    .our-team
+        &__container
+            padding: 40px 45px 0 45px
+        &__wrap
+            width: 150px
