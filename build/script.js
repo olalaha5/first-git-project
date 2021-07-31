@@ -24,13 +24,26 @@ btnPause.addEventListener('click', () => {
 
 let n = 0
 function positionTriangle(i) {
+    if (n != i) {
+        for (let j = 0; j < document.querySelectorAll('.our-team__inner').length; j++) {
+            document.querySelectorAll('.our-team__inner')[j].style.opacity = '0';
+            setTimeout(() => {
+                document.querySelectorAll('.our-team__inner')[j].style.display = 'none';
+            }, 250);
+        };
+        setTimeout(() => {
+            document.querySelectorAll('.our-team__inner')[i > 3 ? i - 2 : i].style.display = 'flex';
+            document.querySelectorAll('.our-team__inner')[i > 3 ? i - 2 : i].style.opacity = '1';
+            positionTriangle(n)
+        }, 250);
+    }
     n = i;
     if (document.documentElement.clientWidth < 561) {
         if (n < 2) positionTriangleTop(document.querySelectorAll('.our-team__card')[n]);
         else positionTriangleBottom(document.querySelectorAll('.our-team__card')[n]);
     } else {
         positionTriangleTop(document.querySelectorAll('.our-team__card')[n]);
-    }
+    };
 }
 
 function positionTriangleTop(elem) {
@@ -44,11 +57,16 @@ function positionTriangleBottom(elem) {
     let triangle = document.querySelector('.our-team__triangle');
     triangle.style.transform = 'rotate(180deg)';
     triangle.style.left = `${elem.offsetWidth / 2 + elem.offsetLeft - 40}px`;
-    triangle.style.top = `${document.querySelector('.our-team__container').offsetHeight + 68}px`;
+    triangle.style.top = `${document.querySelector('.our-team__container').offsetHeight - 40}px`;
+    console.log(document.querySelector('.our-team__container').offsetHeight)
 }
 
 window.addEventListener('load', () => {
     positionTriangle(0)
+    for (let i = 0; i < document.querySelectorAll('.our-team__inner').length; i++) {
+        document.querySelectorAll('.our-team__inner')[i].style.display = 'none';
+    };
+    document.querySelectorAll('.our-team__inner')[0].style.display = 'flex';
 });
 
 window.addEventListener('resize', () => {
@@ -58,4 +76,3 @@ window.addEventListener('resize', () => {
 for (let i = 0; i < document.querySelectorAll('.our-team__card').length; i++) {
     document.querySelectorAll('.our-team__card')[i].addEventListener('click', () => positionTriangle(i))
 }
-
