@@ -33,7 +33,9 @@ function positionTriangle(i) {
         };
         setTimeout(() => {
             document.querySelectorAll('.our-team__inner')[i > 3 ? i - 2 : i].style.display = 'flex';
-            document.querySelectorAll('.our-team__inner')[i > 3 ? i - 2 : i].style.opacity = '1';
+            setTimeout(() => {
+                document.querySelectorAll('.our-team__inner')[i > 3 ? i - 2 : i].style.opacity = '1';
+            }, 10);
             positionTriangle(n)
         }, 250);
     }
