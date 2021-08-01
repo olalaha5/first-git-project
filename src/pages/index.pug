@@ -1,6 +1,7 @@
 extends ../blocks/common/layout
 include ../blocks/common-block/common-block
 include ../blocks/common-container/common-container
+include ../blocks/pricing-card/pricing-card
 
 block head 
     link(rel="stylesheet" type="text/css" href="fonts.css")
@@ -31,3 +32,9 @@ block content
         +common-container_align_right('02','Research & Planning','Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.','green','img/blocks/work steps/image2.png')
         +common-container('03','Wireframe & Design','Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.','red','img/blocks/work steps/image3.png')
         +common-container_align_right('04','Development','Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.','green','img/blocks/work steps/image4.png')
+
+    +common-block_color_gray('06','Pricing Table.','We understand your requirement and provide quality works.')
+        .pricing-table
+            +pricing-card('green','Starter','125','200GB','20','2TB','&#128504','&#128504','&#128504')
+            +pricing-card('red','Ultimate','195','800GB','Unlimited','10TB','&#128504','&#128504','&#128504')
+            +pricing-card('purple','Professional','145','200GB','20','2TB','&#128504','&#128504','&#128504')

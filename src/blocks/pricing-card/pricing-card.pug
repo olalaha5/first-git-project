@@ -1,0 +1,28 @@
+mixin pricing-card (color,name,price,OnlineStorage,FilesPerDay,MonthlyBandwidth,SecurePlatform,CustomerSupport,FastReliable)
+    .pricing-card__wrapper
+        .pricing-card__wrap
+            .color-block.color-block_width_100(class='color-block_background_'+color)
+            .pricing-card__inner
+                .pricing-card__name= name 
+                .pricing-card__price-block.color-block(class='color-block_background_'+color +' color-block_shadow_'+color)
+                    .pricing-card__price $#{price}
+                    .pricing-card__time Per Month
+                .pricing-card__text
+                    b= OnlineStorage
+                    span  Online Storage
+                .pricing-card__text
+                    b= FilesPerDay
+                    span  Files Per Day
+                .pricing-card__text
+                    b= MonthlyBandwidth
+                    span  Monthly Bandwidth
+                .pricing-card__text
+                    b!= SecurePlatform
+                    span  Secure Platform
+                .pricing-card__text
+                    b!= CustomerSupport
+                    span  24/7 Customer Support
+                .pricing-card__text
+                    b!= FastReliable
+                    span Fast & Reliable
+                button(class='color-block_color_'+color+' color-block_btn_'+color).pricing-card__btn.color-block GET STARTED
