@@ -1,0 +1,30 @@
+mixin common-container(num,title,text,color,src,first)
+    .common-container
+        .common-container__wrapper
+            .common-container__img-wrapper
+                img(src="" + src, alt="" + title).common-container__img
+            .common-container__wrap
+                .common-container__inner
+                    .common-container__num
+                        .common-container__num-text= num
+                    <svg class='common-container__line' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84px" height="84px"><path fill-rule="evenodd"  fill="rgb(224, 224, 224)" d="M83.301,0.148 L84.010,0.856 L0.786,84.009 L0.077,83.300 L83.301,0.148 Z"/></svg>
+                    .common-container__text-block
+                        .common-container__title= title
+                        .common-container__text= text
+                .color-block.color-block_width_100(class='color-block_background_' + color)
+
+
+mixin common-container_align_right(num,title,text,color,src)
+    .common-container
+        .common-container__wrapper.common-container__wrapper_align_right
+            .common-container__img-wrapper
+                img(src="" + src, alt="" + title).common-container__img
+            .common-container__wrap
+                .common-container__inner
+                    .common-container__num
+                        .common-container__num-text= num
+                    <svg class='common-container__line' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84px" height="84px"><path fill-rule="evenodd"  fill="rgb(224, 224, 224)" d="M83.301,0.148 L84.010,0.856 L0.786,84.009 L0.077,83.300 L83.301,0.148 Z"/></svg>
+                    .common-container__text-block
+                        .common-container__title= title
+                        .common-container__text= text
+                .color-block.color-block_width_100(class='color-block_background_' + color)
