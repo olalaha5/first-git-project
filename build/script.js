@@ -35,7 +35,7 @@ function positionTriangle(i) {
             document.querySelectorAll('.our-team__inner')[i > 3 ? i - 2 : i].style.display = 'flex';
             setTimeout(() => {
                 document.querySelectorAll('.our-team__inner')[i > 3 ? i - 2 : i].style.opacity = '1';
-            }, 10);
+            }, 10); 
             positionTriangle(n)
         }, 250);
     }
