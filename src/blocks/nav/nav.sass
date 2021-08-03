@@ -2,13 +2,15 @@
     padding: 14px 0 28px 0
     display: flex
     justify-content: center
-    max-height: 1140px
-    &__wrapper
-        margin: 0 10px
-        width: 1140px
-        display: flex
-        justify-content: space-between
-        align-items: center
+    max-width: 1140px
+    width: 100%
+    box-sizing: border-box
+    height: 79px
+    padding: 14px 10px 28px 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 auto
     &__title
         font-size: 35px
         font-family: "Wisdom Script Regular"
@@ -20,11 +22,39 @@
         list-style-type: none
         font-family: 'Poppins',sans-serif
         font-weight: 500
-        margin: 12px 0 0px 0
-
+        margin: 20px 0 0 0
+        border-radius: 5px
+    &__icon
+        width: 30px
+        cursor: pointer
+        display: none
     &__item
         display: inline-block
         margin: 0 0 0 20px
         color: #272727
-        &:first-child
-            margin: 0
+
+@media screen and ( max-width: 1000px )
+    .nav
+        align-items: flex-start
+        padding: 14px 0 28px 10px
+        &__wrapper
+            align-items: flex-start
+        &__list
+            transition: 0.3s
+            padding: 0
+            padding-right: 10px
+            height: 30px
+            background: #fff
+            overflow: hidden
+            width: auto
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            margin: 12px 0 0 0
+            z-index: 20
+        &__icon
+            display: block
+            transform: rotate(180deg)
+            position: relative
+        &__item
+            display: block

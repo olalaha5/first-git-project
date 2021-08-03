@@ -23,3 +23,11 @@ mixin common-block_color_gray(num,title,text,BigPading)
         else 
             .common-block__container
                 block
+
+mixin common-block_color_black(num,title,text)
+    .common-block.common-block_color_black
+        .num.num_position_center.num_color_black= num
+        .title-and-text.title-and-text_align_center
+            h2.title-and-text__title.title-and-text__title_margin_small.title-and-text__title_color_white= title
+            .title-and-text__text.title-and-text__text_color_white= text
+            .common-block__container

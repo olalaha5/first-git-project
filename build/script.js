@@ -1,23 +1,23 @@
-let videoBlock = document.querySelector('.video')
-let container = document.querySelector('.video__container')
-let btnPlay = document.querySelector('.video__btn-play')
-let btnPause = document.querySelector('.video__btn-pause')
-let help = document.querySelector('.video__help')
-let video = document.querySelector('.video__video')
+let videoBlock = document.querySelector('.video');
+let container = document.querySelector('.video__container');
+let btnPlay = document.querySelector('.video__btn-play');
+let btnPause = document.querySelector('.video__btn-pause');
+let help = document.querySelector('.video__help');
+let video = document.querySelector('.video__video');
 
 
 btnPlay.addEventListener('click', () => {
     video.play();
     btnPlay.style.display = 'none';
     btnPause.style.display = 'inline-block';
-    help.innerHTML = 'Click to pause the video'
+    help.innerHTML = 'Click to pause the video';
 });
 
 btnPause.addEventListener('click', () => {
     video.pause();
     btnPlay.style.display = 'inline-block';
     btnPause.style.display = 'none';
-    help.innerHTML = 'Click to play the video'
+    help.innerHTML = 'Click to play the video';
 });
 
 // ------------------------------------------------
@@ -35,7 +35,7 @@ function positionTriangle(i) {
             document.querySelectorAll('.our-team__inner')[i > 3 ? i - 2 : i].style.display = 'flex';
             setTimeout(() => {
                 document.querySelectorAll('.our-team__inner')[i > 3 ? i - 2 : i].style.opacity = '1';
-            }, 10); 
+            }, 10);
             positionTriangle(n)
         }, 250);
     }
@@ -60,11 +60,10 @@ function positionTriangleBottom(elem) {
     triangle.style.transform = 'rotate(180deg)';
     triangle.style.left = `${elem.offsetWidth / 2 + elem.offsetLeft - 40}px`;
     triangle.style.top = `${document.querySelector('.our-team__container').offsetHeight - 40}px`;
-    console.log(document.querySelector('.our-team__container').offsetHeight)
 }
 
 window.addEventListener('load', () => {
-    positionTriangle(0)
+    positionTriangle(0);
     for (let i = 0; i < document.querySelectorAll('.our-team__inner').length; i++) {
         document.querySelectorAll('.our-team__inner')[i].style.display = 'none';
     };
@@ -72,9 +71,24 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('resize', () => {
-    positionTriangle(n)
+    positionTriangle(n);
 });
 
 for (let i = 0; i < document.querySelectorAll('.our-team__card').length; i++) {
-    document.querySelectorAll('.our-team__card')[i].addEventListener('click', () => positionTriangle(i))
+    document.querySelectorAll('.our-team__card')[i].addEventListener('click', () => positionTriangle(i));
 }
+
+
+//---------------------------------------------------------
+
+let menu = document.querySelector('.nav__list');
+let menuButton = document.querySelector('.nav__icon');
+
+window.addEventListener('click', (event) => {
+    if (['nav__icon', 'svg__path'].includes(Array.from(event.path[0].classList)[0])) {
+        menu.style.height = menu.style.height === '260px' ? '30px' : "260px";
+    }
+    else if (!['nav__list', 'nav__item'].includes(Array.from(event.path[0].classList)[0])) {
+        if (menu.style.height === '260px') menu.style.height = '30px';
+    }
+});
