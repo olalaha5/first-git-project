@@ -92,3 +92,22 @@ window.addEventListener('click', (event) => {
         if (menu.style.height === '260px') menu.style.height = '30px';
     }
 });
+
+
+//---------------------------------------------------------------------
+
+let row = document.querySelector('.testimonials__row');
+let nav = document.querySelectorAll('.testimonials__item');
+let right = 0;
+
+function slide() {
+    row.style.right = `${right}vw`;
+    for (let i = 0; i < nav.length; i++) {
+        nav[i].classList.remove('testimonials__item_active');
+    };
+    nav[right / 100].classList.add('testimonials__item_active')
+    right += 100;
+    right = right % 600;
+}
+slide()
+setInterval(slide, 10000);
