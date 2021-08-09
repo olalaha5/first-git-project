@@ -1,26 +1,8 @@
-mixin common-block(num,title,text,BigPading)
-    .common-block
-        .num.num_position_center= num
+mixin common-block(num,title,text,color)
+    .common-block(class='common-block_color_'+color)
+        .num.num_position_center(class='num_color_'+color)= num
         .title-and-text.title-and-text_align_center
-            h2.title-and-text__title.title-and-text__title_margin_small= title
-            .title-and-text__text= text
-        .common-block__container
-            block
-
-mixin common-block_color_gray(num,title,text,BigPading)
-    .common-block.common-block_color_gray
-        .num.num_position_center.num_color_black-gray= num
-        .title-and-text.title-and-text_align_center
-            h2.title-and-text__title.title-and-text__title_margin_small= title
-            .title-and-text__text= text
-        .common-block__container
-            block
-
-mixin common-block_color_black(num,title,text)
-    .common-block.common-block_color_black
-        .num.num_position_center.num_color_black= num
-        .title-and-text.title-and-text_align_center
-            h2.title-and-text__title.title-and-text__title_margin_small.title-and-text__title_color_white= title
-            .title-and-text__text.title-and-text__text_color_white= text
+            h2(class='title-and-text__title_color_'+color).title-and-text__title.title-and-text__title_margin_small= title
+            .title-and-text__text(class='title-and-text__text_color_'+color)= text
         .common-block__container
             block

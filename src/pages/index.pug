@@ -18,7 +18,7 @@ block content
 
     include ..\blocks\about-us\about-us
 
-    +common-block_color_gray('02','Our Focus.','We understand your requirement and provide quality works.')
+    +common-block('02','Our Focus.','We understand your requirement and provide quality works.','gray')
         include ..\blocks\our-focus\our-focus
 
     include ..\blocks\video\video
@@ -26,7 +26,7 @@ block content
     +common-block('03','Portfolio.','We understand your requirement and provide quality works.')
         include ..\blocks\portfolio\portfolio
 
-    +common-block_color_gray('04','Our Team.','We understand your requirement and provide quality works.')
+    +common-block('04','Our Team.','We understand your requirement and provide quality works.','gray')
         include ..\blocks\our-team\our-team
 
     include ..\blocks\about-company-second\about-company-second.pug
@@ -37,14 +37,14 @@ block content
         +common-container('03','Wireframe & Design','Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.','red','img/imag3.png')
         +common-container_align_right('04','Development','Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.','green','img/image4.png')
 
-    +common-block_color_gray('06','Pricing Table.','We understand your requirement and provide quality works.')
+    +common-block('06','Pricing Table.','We understand your requirement and provide quality works.','gray')
         .pricing-table
             +pricing-card('green','Starter','125','200GB','20','2TB','&#10004','&#10004','&#10004')
             +pricing-card('red','Ultimate','195','800GB','Unlimited','10TB','&#10004','&#10004','&#10004')
             +pricing-card('purple','Professional','145','200GB','20','2TB','&#10004','&#10004','&#10004')
 
 
-    +common-block_color_black('07','Testimonials.','We understand your requirement and provide quality works.')
+    +common-block('07','Testimonials.','We understand your requirement and provide quality works.','black')
             .testimonials
                 .testimonials__row 
                     .testimonials__wrapper
@@ -86,9 +86,23 @@ block content
                 span.why-select-us__text Start your journy with us now     
                 button.why-select-us__btn GET STARTED
 
-    +common-block_color_gray('09','Our Blog.','We understand your requirement and provide quality works.')
+    +common-block('09','Our Blog.','We understand your requirement and provide quality works.','gray')
         .our-blog 
             +our-blog__article_size_big('DAMIAN SCHREIBER','December 10, 2015','Google Street View adds virtual reality support','Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm','red','img/image10')
             +our-blog__article('DAMIAN SCHREIBER','December 10, 2015','Google Street View adds virtual reality support','Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm','green')
             +our-blog__article('DAMIAN SCHREIBER','December 10, 2015','Google Street View adds virtual reality support','Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm','purple')
             +our-blog__article('DAMIAN SCHREIBER','December 10, 2015','Google Street View adds virtual reality support','Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm','orange') 
+    
+    .subscribe-form
+        .subscribe-form__text Subscribe to Newsletter
+        form(action="").subscribe-form__wrapper 
+            input(type="e-mail" placeholder='Enter your email').subscribe-form__input
+            button.subscribe-form__btn SUBSCRIBE NOW
+
+    +common-block('10','Get in Touch.','We understand your requirement and provide quality works.','black-gray')
+        form(action="").get-in-touch
+            input(type="text").get-in-touch__input 
+            input(type="text").get-in-touch__input
+            input(type="text").get-in-touch__input
+            input(type="text").get-in-touch__input
+            textarea.get-in-touch__textarea
