@@ -1,0 +1,73 @@
+.get-in-touch
+    max-width: 750px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: repeat(5,1fr) 75px
+    gap: 25px 30px
+    padding: 0 10px
+    justify-items: center
+    &__input
+        padding: 12px
+        width: 100%
+        height: 50px
+        font-size: 16px
+        border: 1px solid #EFEFEF
+        box-sizing: border-box
+        outline: none
+        font-family: "Poppins"
+        color: rgb(97, 97, 97)
+        border-radius: 5px
+        &::-webkit-input-placeholder
+            text-align: center
+
+    &__textarea
+        border-radius: 5px
+        padding: 12px
+        width: 100%
+        grid-row-start: 3
+        grid-row-end: 6
+        grid-column-start: 1
+        grid-column-end: 3
+        resize: none
+        border: 1px solid #EFEFEF
+        outline: none
+        box-sizing: border-box
+        font-size: 16px
+        font-family: "Poppins"
+        color: rgb(97, 97, 97)
+        &::-webkit-input-placeholder
+            text-align: center
+
+    &__button-wrap
+        grid-column-start: 1
+        grid-column-end: 3
+    &__btn
+        margin-top: 25px
+        border-color: #FC5F45
+        width: 180px
+        height: 50px
+        border-radius: 50px
+        border: 2px solid #FC5F45
+        cursor: pointer
+        color: #fff
+        background-color: #FC5F45
+        font-size: 16px
+        font-family: "Poppins"
+        font-weight: bold
+        &:active
+            background-color: #fff
+            color: #FC5F45
+
+@media screen and ( max-width: 500px )
+    .get-in-touch
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(7,1fr)
+        &__textarea
+            grid-row-start: 5
+            grid-row-end: 8
+            grid-column-start: 1
+            grid-column-end: 2
+        &__button-wrap
+            grid-column-start: 1
+            grid-column-end: 2

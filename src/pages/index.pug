@@ -101,8 +101,14 @@ block content
 
     +common-block('10','Get in Touch.','We understand your requirement and provide quality works.','black-gray')
         form(action="").get-in-touch
-            input(type="text").get-in-touch__input 
-            input(type="text").get-in-touch__input
-            input(type="text").get-in-touch__input
-            input(type="text").get-in-touch__input
-            textarea.get-in-touch__textarea
+            input(type="text" placeholder='Your Name').get-in-touch__input 
+            input(type="text" placeholder='Your Email').get-in-touch__input
+            input(type="text" placeholder='Subject').get-in-touch__input
+            input(type="text" placeholder='Project Budget').get-in-touch__input
+            textarea(placeholder='Your Message').get-in-touch__textarea
+            .get-in-touch__button-wrap
+                button.get-in-touch__btn GET STARTED
+    
+    footer.footer 
+        .footer__wrapper
+        
