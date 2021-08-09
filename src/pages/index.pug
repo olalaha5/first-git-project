@@ -18,32 +18,37 @@ block content
 
     include ..\blocks\about-us\about-us
 
+
+    a( name='our-focus')
     +common-block('02','Our Focus.','We understand your requirement and provide quality works.','gray')
         include ..\blocks\our-focus\our-focus
 
     include ..\blocks\video\video
 
+    a( name='portfolio')
     +common-block('03','Portfolio.','We understand your requirement and provide quality works.')
         include ..\blocks\portfolio\portfolio
 
+    a( name='our-team')
     +common-block('04','Our Team.','We understand your requirement and provide quality works.','gray')
         include ..\blocks\our-team\our-team
 
     include ..\blocks\about-company-second\about-company-second.pug
 
+    a( name='work-steps')
     +common-block('05','Work Steps.','We understand your requirement and provide quality works.','true')
         +common-container('01','Project Understanding','Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.','red','img/image.png')
         +common-container_align_right('02','Research & Planning','Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.','green','img/image2.png')
         +common-container('03','Wireframe & Design','Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.','red','img/imag3.png')
         +common-container_align_right('04','Development','Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.','green','img/image4.png')
-
+    a( name='pricing')
     +common-block('06','Pricing Table.','We understand your requirement and provide quality works.','gray')
         .pricing-table
             +pricing-card('green','Starter','125','200GB','20','2TB','&#10004','&#10004','&#10004')
             +pricing-card('red','Ultimate','195','800GB','Unlimited','10TB','&#10004','&#10004','&#10004')
             +pricing-card('purple','Professional','145','200GB','20','2TB','&#10004','&#10004','&#10004')
 
-
+    a( name='testimonials')
     +common-block('07','Testimonials.','We understand your requirement and provide quality works.','black')
             .testimonials
                 .testimonials__row 
@@ -68,6 +73,7 @@ block content
                             li.testimonials__item
                             li.testimonials__item
 
+    
     +common-block('08','Why Select Us?','We understand your requirement and provide quality works.')
         .why-select-us
             +why-select-us__elem('Business <br> Growth','Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.')
@@ -85,7 +91,7 @@ block content
             .why-select-us__wrapper
                 span.why-select-us__text Start your journy with us now     
                 button.why-select-us__btn GET STARTED
-
+    a( name='blog')
     +common-block('09','Our Blog.','We understand your requirement and provide quality works.','gray')
         .our-blog 
             +our-blog__article_size_big('DAMIAN SCHREIBER','December 10, 2015','Google Street View adds virtual reality support','Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm','red','img/image10')
@@ -98,7 +104,7 @@ block content
         form(action="").subscribe-form__wrapper 
             input(type="e-mail" placeholder='Enter your email').subscribe-form__input
             button.subscribe-form__btn SUBSCRIBE NOW
-
+    a( name='contact')
     +common-block('10','Get in Touch.','We understand your requirement and provide quality works.','black-gray')
         form(action="").get-in-touch
             input(type="text" placeholder='Your Name').get-in-touch__input 
