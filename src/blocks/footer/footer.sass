@@ -5,5 +5,57 @@
         background: #3F4049
         max-width: 1140px
         width: 100%
-        height: 225px
         margin: 0 auto
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+        align-items: end
+    &__wrap
+        height: 100%
+        box-sizing: border-box
+    &__inner
+        height: 100%
+        padding: 58px 40px
+        box-sizing: border-box
+    &__logo
+        font-size: 35px
+        font-family: "Wisdom Script Regular"
+        color: #fff
+        line-height: 35px
+        margin-top: 30px
+        margin-bottom: 28px
+        margin-left: 20px
+        &::first-letter
+            color: rgb(252, 95, 69)
+
+    &__title
+        font-size: 18px
+        font-family: "Poppins"
+        margin-bottom: 28px
+    &__text
+        font-family: "Poppins"
+        color: #FFF
+    &__list
+        padding: 0
+        list-style: none
+    &__item
+        display: inline-block
+        margin-left: 20px
+        &:first-child
+            margin: 0
+
+@media screen and ( max-width: 900px )
+    .footer
+        &__wrapper
+            grid-template-columns: 1fr 1fr
+        &__line_first
+            display: none
+
+@media screen and ( max-width: 500px )
+    .footer
+        &__wrapper
+            grid-template-columns: 1fr
+        &__logo
+            text-align: center
+            margin-left: 0
+        &__line_second
+            display: none
