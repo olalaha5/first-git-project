@@ -8,7 +8,7 @@ const {
 
 
 
-const cssnano = require('gulp-cssnano');
+const csso = require('gulp-csso');
 // const changed = require('gulp-changed');
 const browsersync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
@@ -18,6 +18,9 @@ const concat = require('gulp-concat');
 const pug = require('gulp-pug');
 const autoprefixer = require('gulp-autoprefixer');
 const shorthand = require('gulp-shorthand');
+const imageminJpegRecompress = require('imagemin-jpeg-recompress');
+const pngquant = require('imagemin-pngquant');
+const flatten = require('gulp-flatten');
 
 
 
@@ -34,9 +37,12 @@ function fullCssCompilation() {
     return src('./src/blocks/**/*.sass')
         .pipe(concat('style.sass'))
         .pipe(sass())
-        .pipe(autoprefixer())
-        .pipe(shorthand())
-        .pipe(cssnano())
+        .pipe(autoprefixer({
+            grid: true
+        }))
+        .pipe(shorthand({
+        }))
+        .pipe(csso())
         .pipe(dest('./build'))
         .pipe(browsersync.stream());
 }
@@ -44,8 +50,14 @@ function fullCssCompilation() {
 
 
 function img() {
-    return src('./src/**/*.png')
-        .pipe(imagemin())
+    return src('./src/**/*.png') //Выберем наши картинки
+        .pipe(flatten({ includeParents: 0 }))
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{ removeViewBox: false }],
+            use: [pngquant()],
+            interlaced: true
+        }))
         .pipe(dest('./build/img'));
 }
 
@@ -63,7 +75,7 @@ function fullHtmlCompilation() {
 function watchFiles() {
     watch('src/blocks/**/*.sass', fullCssCompilation);
     watch('./src/pages/*.pug', fullHtmlCompilation);
-    watch('./src/**/*.png', img);
+    watch('./src/blocks/**/*.png', img);
 }
 
 

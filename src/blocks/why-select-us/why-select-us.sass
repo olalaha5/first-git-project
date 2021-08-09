@@ -1,0 +1,65 @@
+.why-select-us
+    display: grid
+    padding: 0 20px
+    max-width: 1040px
+    margin: 0 auto
+    gap: 65px 30px
+    grid-template-columns: 1fr 1fr 1fr
+    justify-content: center
+    justify-items: center
+    box-sizing: border-box
+    &__elem
+        display: flex
+        flex-wrap: wrap
+    &__title
+        flex: 1
+        font-size: 18px
+        font-family: "Poppins"
+        color: rgb(39, 39, 39)
+        margin-top: -5px
+        margin-left: 10px
+    &__elem-text
+        width: 100%
+        font-size: 15px
+        font-family: "Poppins"
+        color: rgb(97, 97, 97)
+        line-height: 1.8
+        margin-top: 24px
+    &__wrapper
+        grid-column-start: 1
+        grid-column-end: 4
+        margin-top: 78px
+        text-align: center
+    &__btn
+        border-color: #FC5F45
+        width: 180px
+        height: 50px
+        border-radius: 50px
+        border: 2px solid
+        cursor: pointer
+        color: #fff
+        background-color: #FC5F45
+        font-size: 16px
+        font-family: "Poppins"
+        font-weight: bold
+        &:active
+            background-color: #fff
+            color: #FC5F45
+    &__text
+        font-size: 25px
+        font-family: "Poppins"
+        color: rgb(39, 39, 39)
+        line-height: 1.04
+        text-align: center
+
+@media screen and ( max-width: 690px )
+    .why-select-us
+        grid-template-columns: 1fr 1fr
+        &__wrapper
+            grid-column-end: 3
+
+@media screen and ( max-width: 500px )
+    .why-select-us
+        grid-template-columns: 1fr
+        &__wrapper
+            grid-column-end: 2

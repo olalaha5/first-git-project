@@ -1,0 +1,23 @@
+mixin our-blog__article(autor,data,title,text,color)
+    article.our-blog__article
+        .our-blog__wrapper 
+            .our-blog__autor(class='color-block color-block_color_'+color)= autor
+            .our-blog__data= data
+            .our-blog__title= title
+            span.our-blog__text= text
+                span(class='color-block_color_'+color).our-blog__read-full.color-block  
+                    a(href="")  Read Full Article »
+        .color-block.color-block_width_100(class='color-block_background_'+color)
+
+mixin our-blog__article_size_big(autor,data,title,text,color,src)
+    article.our-blog__article.our-blog__article_size_big
+        .our-blog__wrapper.our-blog__wrapper_size_big
+            .our-blog__inner
+                .our-blog__autor(class='color-block color-block_color_'+color)= autor
+                .our-blog__data.our-blog__data_color_gray= data
+            .our-blog__title.our-blog__title_margin_big= title
+            span.our-blog__text= text
+                span.our-blog__read-full.color-block  
+                    a(href="")  
+                        b Read Full Article »
+        .color-block.color-block_width_100(class='color-block_background_'+color)
